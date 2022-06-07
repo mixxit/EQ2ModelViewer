@@ -1,7 +1,7 @@
-LanternExtractor.sln.DotSettings.user
+EQ2ModelViewer.sln.DotSettings.user
 .idea/
-LanternExtractor/obj/
-LanternExtractor/bin/
+EQ2ModelViewer/obj/
+EQ2ModelViewer/bin/
 
 *.DS_Store
 packages/
