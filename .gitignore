@@ -1,0 +1,8 @@
+LanternExtractor.sln.DotSettings.user
+.idea/
+LanternExtractor/obj/
+LanternExtractor/bin/
+
+*.DS_Store
+packages/
+.vs/
