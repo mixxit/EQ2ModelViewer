@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<configuration>
+	<!-- 
+	The encrypted-maps section defines the maps that the tool knows how to decrypt.
+	All the maps in the 'nrvobm' folder are encrypted using the same algorithm, 
+	but the key needed to decrypt them is sent from the server when the character
+	enters the zone, and varies from map to map.
+	This section lists the maps for which decryption keys are known.
+	-->
+    <encrypted-maps>
+        <map>
+            <name>nrvobm/nrvobm_antonica_west.dds</name>
+            <decryption-key>53 c9 0b 20 d8 fc 82 08</decryption-key>
+        </map>
+        <map>
+            <name>nrvobm/nrvobm_antonica_east.dds</name>
+            <decryption-key>5d 18 d3 5e 80 f4 c1 65</decryption-key>
+        </map>
+    </encrypted-maps>
+</configuration>

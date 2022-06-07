@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C81BFE28-59EA-421A-85BA-2E7F0A027595}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Everquest2</RootNamespace>
+    <AssemblyName>libeq2</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.81.0.1407, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <HintPath>lib\ICSharpCode.SharpZipLib.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IO\DirectoryInfo.cs" />
+    <Compile Include="IO\FileInfo.cs" />
+    <Compile Include="IO\FileStream.cs" />
+    <Compile Include="IO\FileSystem.cs" />
+    <Compile Include="IO\FileSystemInfo.cs" />
+    <Compile Include="IO\FileSystemStructs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Util\DeserializationException.cs" />
+    <Compile Include="Util\Eq2Reader.cs" />
+    <Compile Include="Util\StreamingContext.cs" />
+    <Compile Include="Vdl\Parser\VdlArray.cs" />
+    <Compile Include="Vdl\Parser\VdlElement.cs" />
+    <Compile Include="Vdl\Parser\VdlObject.cs" />
+    <Compile Include="Vdl\Parser\VdlParser.cs" />
+    <Compile Include="Vdl\Parser\VdlSimpleType.cs" />
+    <Compile Include="Vdl\Parser\VdlVector3.cs" />
+    <Compile Include="Vdl\XmlTextReader.cs" />
+    <Compile Include="Visualization\VeAnimation.cs" />
+    <Compile Include="Visualization\VeAnimMeshGeometryNode.cs" />
+    <Compile Include="Visualization\VeBase.cs" />
+    <Compile Include="Visualization\VeBillNode.cs" />
+    <Compile Include="Visualization\VeBox.cs" />
+    <Compile Include="Visualization\VeCollisionMesh.cs" />
+    <Compile Include="Visualization\VeEnvironmentNode.cs" />
+    <Compile Include="Visualization\VeFileNode.cs" />
+    <Compile Include="Visualization\VeGeometryNode.cs" />
+    <Compile Include="Visualization\VeItemDatabaseNode.cs" />
+    <Compile Include="Visualization\VeItemNode.cs" />
+    <Compile Include="Visualization\VeLightNode.cs" />
+    <Compile Include="Visualization\VeMeshGeometryNode.cs" />
+    <Compile Include="Visualization\VeNode.cs" />
+    <Compile Include="Visualization\VeParticleGeneratorNode.cs" />
+    <Compile Include="Visualization\ParticleGenerator\VeParticleGeneratorOps.cs" />
+    <Compile Include="Visualization\VePortalNode.cs" />
+    <Compile Include="Visualization\VeRegion.cs" />
+    <Compile Include="Visualization\VeRenderMesh.cs" />
+    <Compile Include="Visualization\VeResourceNode.cs" />
+    <Compile Include="Visualization\VeRoomItemNode.cs" />
+    <Compile Include="Visualization\VeSelectNode.cs" />
+    <Compile Include="Visualization\VeShaderPalette.cs" />
+    <Compile Include="Visualization\VeSkeleton.cs" />
+    <Compile Include="Visualization\VeSoundNode.cs" />
+    <Compile Include="Visualization\VeSphere.cs" />
+    <Compile Include="Visualization\VeVolume.cs" />
+    <Compile Include="Visualization\VeXformNode.cs" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License.txt" />
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Spart\Spart.csproj">
+      <Project>{52C43CC3-4D59-4328-9713-7225D3EEE893}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Name>Spart</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+</Project>

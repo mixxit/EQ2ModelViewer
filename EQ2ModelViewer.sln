@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EQ2ModelViewer", "EQ2ModelViewer\EQ2ModelViewer.csproj", "{D82B7FE5-F1A5-4BEC-8D98-14DB7561C8B2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2F133C14-27F5-4593-BBCC-F12670A59E03} = {2F133C14-27F5-4593-BBCC-F12670A59E03}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eq2VpkTool", "EQ2ModelViewer\Eq2VpkTool\Eq2VpkTool.csproj", "{2F133C14-27F5-4593-BBCC-F12670A59E03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libeq2", "EQ2ModelViewer\libeq2\libeq2.csproj", "{C81BFE28-59EA-421A-85BA-2E7F0A027595}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spart", "EQ2ModelViewer\Spart\Spart.csproj", "{52C43CC3-4D59-4328-9713-7225D3EEE893}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D82B7FE5-F1A5-4BEC-8D98-14DB7561C8B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D82B7FE5-F1A5-4BEC-8D98-14DB7561C8B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D82B7FE5-F1A5-4BEC-8D98-14DB7561C8B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D82B7FE5-F1A5-4BEC-8D98-14DB7561C8B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F133C14-27F5-4593-BBCC-F12670A59E03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F133C14-27F5-4593-BBCC-F12670A59E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F133C14-27F5-4593-BBCC-F12670A59E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F133C14-27F5-4593-BBCC-F12670A59E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C81BFE28-59EA-421A-85BA-2E7F0A027595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C81BFE28-59EA-421A-85BA-2E7F0A027595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C81BFE28-59EA-421A-85BA-2E7F0A027595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C81BFE28-59EA-421A-85BA-2E7F0A027595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C43CC3-4D59-4328-9713-7225D3EEE893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C43CC3-4D59-4328-9713-7225D3EEE893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C43CC3-4D59-4328-9713-7225D3EEE893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C43CC3-4D59-4328-9713-7225D3EEE893}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
